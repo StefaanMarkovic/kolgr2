@@ -36,4 +36,51 @@ public class SkiSlope {
         this.skiResort = skiResort;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getLength() {
+        return length;
+    }
+
+    public void setLength(Integer length) {
+        this.length = length;
+    }
+
+    public SlopeDifficulty getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(SlopeDifficulty difficulty) {
+        this.difficulty = difficulty;
+    }
+
+    public SkiResort getSkiResort() {
+        return skiResort;
+    }
+
+    public void setSkiResort(SkiResort skiResort) {
+        this.skiResort = skiResort;
+    }
+
+    public boolean isClosed() {
+        return closed;
+    }
+
+    public void setClosed(boolean closed) {
+        this.closed = closed;
+    }
 }

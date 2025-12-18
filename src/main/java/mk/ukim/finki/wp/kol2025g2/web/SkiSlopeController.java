@@ -41,7 +41,7 @@ public class SkiSlopeController {
                           @RequestParam(required = false) SlopeDifficulty difficulty,
                           @RequestParam(required = false) Long skiResort,
                           @RequestParam(required = false, defaultValue = "0") Integer pageNum,
-                          @RequestParam(required = false, defaultValue = "5") Integer pageSize,
+                          @RequestParam(required = false, defaultValue = "10") Integer pageSize,
                           Model model) {
         Page<mk.ukim.finki.wp.kol2025g2.model.SkiSlope> page = this.skiSlopeService.findPage(name, length, difficulty, skiResort, pageNum, pageSize);
         model.addAttribute("slopes", page.getContent());
